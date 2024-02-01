@@ -19,6 +19,10 @@
 . /media/fat/groovyhelper/groovyhelper-system.ini
 . /media/fat/groovyhelper/groovyhelper-user.ini
 
+echo -e "\n +--------------------------+";
+echo -e " | ${fyellow}GroovyHelper Installer${freset} |";
+echo -e " +--------------------------+\n";
+
 # Check for and create groovyhelper script folder
 [[ -d ${GROOVYHELPER_PATH} ]] && cd ${GROOVYHELPER_PATH} || mkdir ${GROOVYHELPER_PATH}
 
@@ -28,6 +32,7 @@ if [ $(/bin/mount | head -n1 | grep -c "(ro,") = 1 ]; then
   MOUNTRO="true"
 fi
 
+# Enable service to start at boot
 if [ ! -e /media/fat/linux/user-startup.sh ] && [ -e /etc/init.d/S99user ]; then
   if [ -e /media/fat/linux/_user-startup.sh ]; then
     echo "Copying /media/fat/linux/_user-startup.sh to /media/fat/linux/user-startup.sh"
@@ -44,48 +49,7 @@ if [ $(grep -c "groovyhelper" /media/fat/linux/user-startup.sh) = "0" ]; then
   echo -e "[[ -e ${INITSCRIPT} ]] && ${INITSCRIPT} \$1" >> /media/fat/linux/user-startup.sh
 fi
 
-echo -e "${fgreen}GroovyHelper update script"
-echo -e "----------------------${freset}"
-echo -e "${fgreen}Checking for available GroovyHelper updates...${freset}"
-
-
-# init script
-wget ${NODEBUG} "${REPOSITORY_URL}${REPO_BRANCH}/mister/groovyhelper/S60groovyhelper" -O /tmp/S60groovyhelper
-if  ! [ -f ${INITSCRIPT} ]; then
-  if  [ -f ${INITDISABLED} ]; then
-    echo -e "${fyellow}Found disabled init script, skipping Install${freset}"
-  else
-    echo -e "${fyellow}Installing init script ${fmagenta}S60groovyhelper${freset}"
-    mv -f /tmp/S60groovyhelper ${INITSCRIPT}
-    chmod +x ${INITSCRIPT}
-  fi
-elif ! cmp -s /tmp/S60groovyhelper ${INITSCRIPT}; then
-  if [ "${SCRIPT_UPDATE}" = "true" ]; then
-    echo -e "${fyellow}Updating init script ${fmagenta}S60groovyhelper${freset}"
-    mv -f /tmp/S60groovyhelper ${INITSCRIPT}
-    chmod +x ${INITSCRIPT}
-  else
-    echo -e "${fblink}Skipping${fyellow} available init script update because of the ${fcyan}SCRIPT_UPDATE${fyellow} INI-Option${freset}"
-  fi
-fi
-[[ -f /tmp/S60groovyhelper ]] && rm /tmp/S60groovyhelper
-
-# Update daemon
-wget ${NODEBUG} "${REPOSITORY_URL}${REPO_BRANCH}/mister/groovyhelper/${DAEMONNAME}" -O /tmp/${DAEMONNAME}
-if  ! [ -f ${DAEMONSCRIPT} ]; then
-  echo -e "${fyellow}Installing daemon script ${fmagenta}groovyhelper${freset}"
-  mv -f /tmp/${DAEMONNAME} ${DAEMONSCRIPT}
-  chmod +x ${DAEMONSCRIPT}
-elif ! cmp -s /tmp/${DAEMONNAME} ${DAEMONSCRIPT}; then
-  if [ "${SCRIPT_UPDATE}" = "true" ]; then
-    echo -e "${fyellow}Updating daemon script ${fmagenta}groovyhelper${freset}"
-    mv -f /tmp/${DAEMONNAME} ${DAEMONSCRIPT}
-    chmod +x ${DAEMONSCRIPT}
-  else
-    echo -e "${fblink}Skipping${fyellow} available daemon script update because of the ${fcyan}SCRIPT_UPDATE${fyellow} INI-Option${freset}"
-  fi
-fi
-[[ -f /tmp/${DAEMONNAME} ]] && rm /tmp/${DAEMONNAME}
+echo -e "${fgreen}GroovyHelper Installed${freset}"
 
 # Check and remount root non-writable if neccessary
 [ "${MOUNTRO}" = "true" ] && /bin/mount -o remount,ro /
