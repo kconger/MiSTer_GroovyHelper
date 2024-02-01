@@ -5,15 +5,36 @@
     "db_url": "https://raw.githubusercontent.com/kconger/MiSTer_GroovyHelper/master/groovyhelperdb.json",
     "default_options": {},
     "files": {
-	"Scripts/update_groovyhelper.sh": {
-	    "hash": "58034617ca17ce1a846273f96f54de41",
-	    "size": 3449,
-	    "url": "https://raw.githubusercontent.com/kconger/MiSTer_GroovyHelper/master/mister/update_groovyhelper.sh"
+	"groovyhelper/install_groovyhelper.sh": {
+	    "hash": "VVV",
+	    "size": VVV,
+	    "url": "https://raw.githubusercontent.com/kconger/MiSTer_GroovyHelper/master/mister/groovyhelper/groovyhelper.sh"
+	},
+	"groovyhelper/groovyhelper.sh": {
+	    "hash": "c5c5b70121eac55d98d4a007074aa90e",
+	    "size": 3077,
+	    "url": "https://raw.githubusercontent.com/kconger/MiSTer_GroovyHelper/master/mister/groovyhelper/groovyhelper.sh"
+	},
+	"groovyhelper/S60groovyhelper": {
+	    "hash": "3e2a755a091441b51b8d6070af3daec6",
+	    "size": 604,
+	    "url": "https://raw.githubusercontent.com/kconger/MiSTer_GroovyHelper/master/mister/groovyhelper/S60groovyhelper"
+	},
+	"groovyhelper/groovyhelper-system.ini": {
+	    "hash": "51d19a19a273d5413b2dafc6e7afd6d8",
+	    "size": 2686,
+	    "url": "https://raw.githubusercontent.com/kconger/MiSTer_GroovyHelper/master/mister/groovyhelper/groovyhelper-system.ini"
+	},
+	"groovyhelper/groovyhelper-user.ini": {
+	    "overwrite": false,
+	    "hash": "93afa1bfc830eb67426e5549cbc8c596",
+	    "size": 509,
+	    "url": "https://raw.githubusercontent.com/kconger/MiSTer_GroovyHelper/master/mister/groovyhelper/groovyhelper-user.ini"
 	}
     },
     "folders": {
 	"Scripts": {}
     },
-    "timestamp": 1706589512,
+    "timestamp": 1706743488,
     "zips": {}
 }
