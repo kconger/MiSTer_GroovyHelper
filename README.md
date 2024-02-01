@@ -3,12 +3,12 @@
 
 Current Features
 -------
-- Starts and Stops GroovyMAME on another host from a MGL file
+- Starts and Stops GroovyMAME on another host from a MGL file, tested on Linux and Macos
 
 Requirements
 -------
 - [Groovy_MiSTer](https://github.com/psakhis/Groovy_MiSTer) installed on your MiSTer
-- [GroovyMAME](https://github.com/antonioginer/GroovyMAME) installed and configured on another Linux host
+- [GroovyMAME](https://github.com/antonioginer/GroovyMAME) installed and configured on another host
 - SSH Server on your Groovy emulator host
 - SSH Key setup between your MiSTer and Groovy emulator host
 
@@ -37,7 +37,7 @@ On your MiSTer generate a SSH key without a password and save to its default loc
 ssh-keygen -t ed25519
 ```
 
-Copy the key to your Groovy Linux host using the user who will run the emulator.
+Copy the key to your Groovy emulator host using the user who will run the emulator.
 ```
 ssh-copy-id username@your_mame_host
 ```
@@ -45,4 +45,4 @@ ssh-copy-id username@your_mame_host
 Credits
 -------
 
-Linux/MiSTer service code and update scripts from the [MiSTer_tty2oled](https://github.com/venice1200/MiSTer_tty2oled) project with modifications.
+MiSTer service code and update scripts from the [MiSTer_tty2oled](https://github.com/venice1200/MiSTer_tty2oled) project with modifications.
