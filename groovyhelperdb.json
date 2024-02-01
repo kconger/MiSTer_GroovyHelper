@@ -8,7 +8,7 @@
 	"groovyhelper/install_groovyhelper.sh": {
 	    "hash": "51d19a19a273d5413b2dafc6e7afd6d8",
 	    "size": 2686,
-	    "url": "https://raw.githubusercontent.com/kconger/MiSTer_GroovyHelper/master/mister/groovyhelper/groovyhelper.sh"
+	    "url": "https://raw.githubusercontent.com/kconger/MiSTer_GroovyHelper/master/mister/groovyhelper/install_groovyhelper.sh"
 	},
 	"groovyhelper/groovyhelper.sh": {
 	    "hash": "c5c5b70121eac55d98d4a007074aa90e",

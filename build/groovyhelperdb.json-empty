@@ -8,7 +8,7 @@
 	"groovyhelper/install_groovyhelper.sh": {
 	    "hash": "VVV",
 	    "size": VVV,
-	    "url": "https://raw.githubusercontent.com/kconger/MiSTer_GroovyHelper/master/mister/groovyhelper/groovyhelper.sh"
+	    "url": "https://raw.githubusercontent.com/kconger/MiSTer_GroovyHelper/master/mister/groovyhelper/install_groovyhelper.sh"
 	},
 	"groovyhelper/groovyhelper.sh": {
 	    "hash": "WWW",
