@@ -14,8 +14,8 @@ INI_SIZE=$(ls -o ../mister/groovyhelper/groovyhelper-user.ini | awk '{print $4}'
 
 cp groovyhelperdb.json-empty groovyhelperdb.json
 
-gsed -i 's/"hash": "YYY"/"hash": "'${INSTALLER_MD5}'"/' groovyhelperdb.json
-gsed -i 's/"size": YYY/"size": '${INSTALLER_SIZE}'/' groovyhelperdb.json
+gsed -i 's/"hash": "VVV"/"hash": "'${INSTALLER_MD5}'"/' groovyhelperdb.json
+gsed -i 's/"size": VVV/"size": '${INSTALLER_SIZE}'/' groovyhelperdb.json
 gsed -i 's/"hash": "WWW"/"hash": "'${SCRIPT_MD5}'"/' groovyhelperdb.json
 gsed -i 's/"size": WWW/"size": '${SCRIPT_SIZE}'/' groovyhelperdb.json
 gsed -i 's/"hash": "XXX"/"hash": "'${SVC_MD5}'"/' groovyhelperdb.json

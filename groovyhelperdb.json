@@ -6,8 +6,8 @@
     "default_options": {},
     "files": {
 	"groovyhelper/install_groovyhelper.sh": {
-	    "hash": "VVV",
-	    "size": VVV,
+	    "hash": "51d19a19a273d5413b2dafc6e7afd6d8",
+	    "size": 2686,
 	    "url": "https://raw.githubusercontent.com/kconger/MiSTer_GroovyHelper/master/mister/groovyhelper/groovyhelper.sh"
 	},
 	"groovyhelper/groovyhelper.sh": {
@@ -21,8 +21,8 @@
 	    "url": "https://raw.githubusercontent.com/kconger/MiSTer_GroovyHelper/master/mister/groovyhelper/S60groovyhelper"
 	},
 	"groovyhelper/groovyhelper-system.ini": {
-	    "hash": "51d19a19a273d5413b2dafc6e7afd6d8",
-	    "size": 2686,
+	    "hash": "660e995ee09ab8c31b4753bb7ea1ed07",
+	    "size": 1122,
 	    "url": "https://raw.githubusercontent.com/kconger/MiSTer_GroovyHelper/master/mister/groovyhelper/groovyhelper-system.ini"
 	},
 	"groovyhelper/groovyhelper-user.ini": {
