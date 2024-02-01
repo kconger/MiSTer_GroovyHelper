@@ -14,17 +14,21 @@ Requirements
 
 Installation
 -------
-Copy linux/update_groovyhelper.sh to your MiSTer Scripts folder: /media/fat/Scripts/
+Add the following entry to your 'downloader.ini' then run 'update_all.sh'
+```
+[groovyhelper_files]
+db_url = https://raw.githubusercontent.com/kconger/MiSTer_GroovyHelper/master/groovyhelperdb.json
+```
 
-Run "update_groovyhelper.sh" on your MiSTer.  This can be done from the console, ssh, or TV.
+Run "update_all.sh" on your MiSTer. 
 
-Add the user config options from "/media/fat/groovyhelper/groovyhelper-system.ini" to "/media/fat/groovyhelper/groovyhelper-user.ini" and modify them for your enviroment.
+Modify "/media/fat/groovyhelper/groovyhelper-user.ini" for your enviroment. 
 
-Copy the 'GroovyMAME.mgl' to a Core folder, ie. _Utility
+Run "/media/fat/groovyhelper/install_groovyhelper.sh" to install the service
 
-Reboot your MiSTer
+Copy the 'GroovyMAME.mgl' from this repo to a Core folder, ie. _Utility
 
-Setup
+SSH Key Setup
 -------
 On your Groovy Emulator host make sure you have SSH server enabled and running.
 
