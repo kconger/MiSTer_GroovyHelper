@@ -8,8 +8,9 @@ Current Features
 Requirements
 -------
 - [Groovy_MiSTer](https://github.com/psakhis/Groovy_MiSTer) installed on your MiSTer
-- GroovyMAME installed on another Linux host
-- SSH Key setup between your MiSTer and GroovyMAME host
+- [GroovyMAME](https://github.com/antonioginer/GroovyMAME) installed and configured on another Linux host
+- SSH Server on your Groovy emulator host
+- SSH Key setup between your MiSTer and Groovy emulator host
 
 Installation
 -------
@@ -17,15 +18,15 @@ Copy linux/update_groovyhelper.sh to your MiSTer Scripts folder: /media/fat/Scri
 
 Run "update_groovyhelper.sh" on your MiSTer.  This can be done from the console, ssh, or TV.
 
-Modify your "/media/fat/groovyhelper/groovyhelper-user.ini" see "/media/fat/groovyhelper/groovyhelper-system.ini" for examples.
+Add the user config options from "/media/fat/groovyhelper/groovyhelper-system.ini" to "/media/fat/groovyhelper/groovyhelper-user.ini" and modify them for your enviroment.
 
-Copy the 'GroovyMAME.mgl' to a Core folder, ie. _Arcade
+Copy the 'GroovyMAME.mgl' to a Core folder, ie. _Utility
 
 Reboot your MiSTer
 
 Setup
 -------
-On your Groovy Emulator machine make sure you have SSH server enabled and running.
+On your Groovy Emulator host make sure you have SSH server enabled and running.
 
 On your MiSTer generate a SSH key without a password and save to its default location.
 ```
