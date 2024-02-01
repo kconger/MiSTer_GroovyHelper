@@ -7,7 +7,7 @@ Current Features
 
 Requirements
 -------
-- [Groovy_MiSTer](https://github.com/psakhis/Groovy_MiSTer) installed on your MiSTer
+- [Groovy_MiSTer](https://github.com/psakhis/Groovy_MiSTer) installed on your MiSTer. Groovy Core must be installed in _Utility directory otherwise the MGL will need to be modified with the new path.
 - [GroovyMAME](https://github.com/antonioginer/GroovyMAME) installed and configured on another host
 - SSH Server on your Groovy emulator host
 - SSH Key setup between your MiSTer and Groovy emulator host
