@@ -27,8 +27,8 @@
 	},
 	"groovyhelper/groovyhelper-user.ini": {
 	    "overwrite": false,
-	    "hash": "93afa1bfc830eb67426e5549cbc8c596",
-	    "size": 509,
+	    "hash": "9dd9bb5831a39551e0ef36f43e7e0408",
+	    "size": 945,
 	    "url": "https://raw.githubusercontent.com/kconger/MiSTer_GroovyHelper/master/mister/groovyhelper/groovyhelper-user.ini"
 	}
     },
