@@ -3,17 +3,18 @@
 
 Current Features
 -------
-- Starts and Stops GroovyMAME on another host from a MGL file, tested on Linux and Macos
+- Starts and Stops GroovyMAME on another host from a MGL file, tested on Linux, Macos, and Windows(Untested)
 
 Requirements
 -------
-- [Groovy_MiSTer](https://github.com/psakhis/Groovy_MiSTer) installed on your MiSTer. Groovy Core must be installed in _Utility directory otherwise the MGL will need to be modified with the new path.
-- [GroovyMAME](https://github.com/antonioginer/GroovyMAME) installed and configured on another host
+- [Groovy_MiSTer](https://github.com/psakhis/Groovy_MiSTer) installed on your MiSTer. 
+- [GroovyMAME](https://github.com/antonioginer/GroovyMAME) installed and configured on another host. 
 - SSH Server on your Groovy emulator host
 - SSH Key setup between your MiSTer and Groovy emulator host
 
-Installation
+Installation and Setup
 -------
+
 Add the following entry to your 'downloader.ini' then run 'update_all.sh'
 ```
 [groovyhelper_files]
@@ -27,6 +28,10 @@ Modify "/media/fat/groovyhelper/groovyhelper-user.ini" for your enviroment.
 Run "/media/fat/groovyhelper/install_groovyhelper.sh" to install the service
 
 Copy the 'GroovyMAME.mgl' from this repo to a Core folder, ie. _Utility
+
+Groovy Core must be installed in _Utility directory otherwise the MGL will need to be modified with the new path.
+
+GroovyMAME should be configured using the mame.ini per the [Groovy_MiSTer](https://github.com/psakhis/Groovy_MiSTer) documentation.
 
 SSH Key Setup
 -------
